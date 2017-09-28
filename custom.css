@@ -10,6 +10,7 @@ body {
   color: #fff;
   background-image: url('/images/epikode_bg.jpg');
   background-size: cover;
+  background-color: #000;
 }
 .hero .container {
   padding: 100px 0;
