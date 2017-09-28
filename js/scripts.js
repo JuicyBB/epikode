@@ -14,3 +14,5 @@ $(document).ready(function(){
   maxFontSize: '50px'
   });
 });
+
+$(".bg").interactive_bg();
