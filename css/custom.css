@@ -25,6 +25,9 @@ body {
   position: absolute;
   z-index: -1;
 }
+@media screen and (max-width: 699px) {
+  .ibg-bg { display: none; }
+}
 .bg-overlay {
   position: absolute;
   width: 100%;
