@@ -1,13 +1,10 @@
 $(window).load(function() {
   // Animate loader off screen
   $(".se-pre-con").fadeOut("slow");
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
 });
 
 $(document).ready(function() {
-
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-
   window.addEventListener("resize", () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
