@@ -1,7 +1,9 @@
 $(window).load(function() {
   // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");
-  document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
+  setTimeout(function() {
+    $(".loading-screen").fadeOut(400);
+  }, 1000);
+  document.documentElement.style.setProperty("--vh", `${window.innerHeight / 100}px`);
 });
 
 $(document).ready(function() {
