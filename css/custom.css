@@ -41,12 +41,46 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    125.14deg,
-    rgba(92, 37, 141, 0.8) 14.97%,
-    rgba(67, 137, 162, 0.8) 100.57%
-  );
+  background-image: -o-linear-gradient(145deg, #e64c1f, #5c258d, #ff9947, #2adb28, #4389a2);
+  background-image: -webkit-linear-gradient(145deg, #e64c1f, #5c258d, #ff9947, #2adb28, #4389a2);
+  background-image: linear-gradient(145deg, #e64c1f, #5c258d, #ff9947, #2adb28, #4389a2);
+  /* background-image: linear-gradient(
+    145deg,
+    #5c258d 14.97%,
+    #4389a2 100.57%
+  ); */
   z-index: -1;
+  background-size: 1200% 1200%;
+  -webkit-animation: BgColorAnimation 20s linear infinite;
+  -moz-animation: BgColorAnimation 20s linear infinite;
+  -ms-animation: BgColorAnimation 20s linear infinite;
+  -o-animation: BgColorAnimation 20s linear infinite;
+  animation: BgColorAnimation 20s linear infinite;
+  opacity: 0.8;
+}
+
+@-webkit-keyframes BgColorAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes BgColorAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .content-container {
@@ -79,6 +113,7 @@ h2 {
   font-size: 24px;
   line-height: 1.5;
   margin: 0;
+  font-weight: 300;
 }
 
 .cloud-login {
@@ -89,17 +124,18 @@ h2 {
   border-radius: 20px;
   padding: 0 24px;
   display: inline-flex;
-  background-color: #1a9fcf;
+  background-color: rgba(255, 255, 255, 0.20);
   align-items: center;
-  -webkit-transition: background-color 300ms ease-out;
-  -moz-transition: background-color 300ms ease-out;
-  -ms-transition: background-color 300ms ease-out;
-  -o-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
+  font-weight: 400;
+  -webkit-transition: background-color 350ms ease-out;
+  -moz-transition: background-color 350ms ease-out;
+  -ms-transition: background-color 350ms ease-out;
+  -o-transition: background-color 350ms ease-out;
+  transition: background-color 350ms ease-out;
 }
 
 .cloud-login:hover {
-  background-color: #15789b;
+  background-color: #1a9fcf;
   text-decoration: none;
   color: #fff;
 }
