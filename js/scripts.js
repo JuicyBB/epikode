@@ -2,7 +2,7 @@ $(window).load(function() {
   // Animate loader off screen
   setTimeout(function() {
     $(".loading-screen").fadeOut(400);
-  }, 1000);
+  }, 800);
   document.documentElement.style.setProperty("--vh", `${window.innerHeight / 100}px`);
 });
 

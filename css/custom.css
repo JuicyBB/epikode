@@ -154,6 +154,7 @@ body {
   margin-bottom: 24px;
   font-weight: 400;
   letter-spacing: 8px;
+  margin-right: -8px;
 }
 
 header {
