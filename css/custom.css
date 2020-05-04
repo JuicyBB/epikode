@@ -149,9 +149,11 @@ body {
 }
 
 .brand-title {
-  font-size: 32px;
+  font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 24px;
+  font-weight: 400;
+  letter-spacing: 8px;
 }
 
 header {
@@ -206,7 +208,7 @@ h2 {
   }
   
   .brand-title {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
   
